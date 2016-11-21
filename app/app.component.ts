@@ -13,7 +13,8 @@ import { HeroService } from './hero.service';
 					  <span class="badge">{{hero.id}}</span> {{hero.name}}
 					</li>
 				</ul>
-				<my-hero-detail [hero]="selectedHero" ></my-hero-detail>
+				<my-hero-detail titre="test" [hero]="selectedHero" ></my-hero-detail>
+				<my-hero-detail titre="test2" [hero]="selectedHero" ></my-hero-detail>
 			  `,
 	 styles: [`
 		  .selected {
@@ -74,7 +75,8 @@ export class AppComponent implements OnInit {
 	constructor(private heroService: HeroService) { }
 	
 	getHeroes(): void {
-	  this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
+		this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+	  //this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
 	}
 	
 	ngOnInit(): void {
