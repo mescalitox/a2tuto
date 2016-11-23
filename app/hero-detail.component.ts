@@ -5,7 +5,7 @@ import { Hero } from './hero';
   selector: 'my-hero-detail',
   template: `
 			  <div *ngIf="hero">
-				<h2>{{hero.name}} details!</h2>
+				<h2>{{titre}} || {{hero.name}} details!</h2>
 				<div><label>id: </label>{{hero.id}}</div>
 				<div>
 				  <label>name: </label>
@@ -15,6 +15,6 @@ import { Hero } from './hero';
 			`
 })
 export class HeroDetailComponent {
-	 @Input() 
-	 hero: Hero;
+	 @Input() titre: string;
+	 @Input() hero: Hero;
 }
