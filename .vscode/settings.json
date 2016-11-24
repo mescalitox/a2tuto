@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
 {
-=======
-{
     "typescript.tsdk": "./node_modules/typescript/lib"
->>>>>>> 7709a1f48ed5c51650d2199a3b804cec291df6f6
 }
